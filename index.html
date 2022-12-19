@@ -6,89 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Anatoly, cv, resume" />
     <meta name="description" content="Это сайт-резюме Анатолия Данильчука" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Anatoly Resume</title>
   </head>
   <body>
-    <img src="img_1.jpg" alt="Анатолий Данильчук " width="250" />
+    <div class="container">
+      <div class="info">
+        <img src="img_1.jpg" alt="Анатолий Данильчук " class="avatar" />
 
-    <h1>Anatoly</h1>
-    <p>
-      Я являюсь учеником онлайн школы по программированию
-      <strong>Result School.</strong>
-    </p>
-    <p>
-      Я люблю свою <em><strong> семью!</strong></em>
-    </p>
+        <div class="info-text">
+          <h1>Анатолий Данильчук</h1>
+          <p>
+            Я являюсь учеником онлайн школы по программированию
+            <strong>Result School.</strong>
+          </p>
+          <p>
+            Я люблю свою <em><strong> семью!</strong></em>
+          </p>
 
-    <h3>Список социальных сетей:</h3>
-    <a href="https://t.me/pridnestrovec" target="_blank">Telegram </a>
-    |
-    <a href="https://vk.com/id302433160" target="_blank">Vk</a>
-    |
-    <a href="https://result.school/" target="_blank">Youtube</a>
-
-    <h2>Мои хобби</h2>
-
-    <ol>
-      <li>Путешествие</li>
-      <li>Рыбалка</li>
-      <li>Шахматы</li>
-    </ol>
-
-    <h2>Опыт работы</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Дожность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>"ООО" ММЗ</td>
-          <td>Подручный Сталевара</td>
-          <td>1992-1998</td>
-        </tr>
-        <tr>
-          <td>Sula Steel Egypt</td>
-          <td>Operator LF</td>
-          <td>1998-2000</td>
-        </tr>
-        <tr>
-          <td>"ООО" ММЗ</td>
-          <td>Сталевар УКП</td>
-          <td>2000-2011</td>
-        </tr>
-        <tr>
-          <td>"ООО" НЛМК-КАЛУГА</td>
-          <td>Сталевар УКП</td>
-          <td>2013-по сей день</td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form action="">
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя" />
-        <!-- placeholder="Введите имя" -->
+          <h4>Список социальных сетей:</h4>
+          <a href="https://t.me/pridnestrovec" target="_blank">Telegram </a>
+          |
+          <a href="https://vk.com/id302433160" target="_blank">Vk</a>
+          |
+          <a href="https://result.school/" target="_blank">Youtube</a>
+        </div>
       </div>
-      <div>
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите Email" />
+
+      <div class="card bg-green">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Путешествие</li>
+          <li>Рыбалка</li>
+          <li>Шахматы</li>
+        </ol>
       </div>
-      <div>
-        <label for="message">Ваше сообщение:</label>
-        <br />
-        <textarea
-          id="message"
-          cols="20"
-          rows="7"
-          placeholder="Введите сообщение..."
-        ></textarea>
+
+      <div class="card bg-red">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Название</th>
+              <th>Дожность</th>
+              <th>Год</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>"ООО" ММЗ</td>
+              <td>Подручный Сталевара</td>
+              <td>1992-1998</td>
+            </tr>
+            <tr>
+              <td>Sula Steel Egypt</td>
+              <td>Operator LF</td>
+              <td>1998-2000</td>
+            </tr>
+            <tr>
+              <td>"ООО" ММЗ</td>
+              <td>Сталевар УКП</td>
+              <td>2000-2011</td>
+            </tr>
+            <tr>
+              <td>"ООО" НЛМК-КАЛУГА</td>
+              <td>Сталевар УКП</td>
+              <td>2013-по сей день</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <input type="submit" value="Отправить" />
-    </form>
+      <div class="card bg-yellow">
+        <h2>Мои курсы</h2>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://lk.result.school/pl/teach/control/lesson/view?id=246399203"
+              target="_blank"
+              >Получение профессии</a
+            >
+          </li>
+
+          <li>
+            <a href="https://www.gosuslugi.ru/" target="_blank">Все курсы</a>
+          </li>
+        </ul>
+      </div>
+
+      <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+            <!-- placeholder="Введите имя" -->
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" placeholder="Введите Email" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+
+          <textarea
+            id="message"
+            cols="20"
+            rows="7"
+            placeholder="Введите сообщение..."
+          ></textarea>
+        </div>
+        <input type="submit" value="Отправить" />
+      </form>
+      <br />
+      <br />
+      <br />
+    </div>
   </body>
 </html>
